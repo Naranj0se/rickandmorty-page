@@ -1,0 +1,227 @@
+body {
+  background-color: #44281d;
+  font-family: "Share Tech", sans-serif;
+  margin: 0;
+  color: #ffffff;
+}
+
+nav {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  background-color: #e4a788;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  height: 64px;
+}
+
+.footer {
+  display: flex;
+  background-color: #97ce4c;
+  justify-content: space-between;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 32px;
+}
+
+li {
+  list-style: none;
+  transition: background-color 0.2s ease-out;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+li:hover {
+  background-color: #f0e14a;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.main-section h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-section h3 {
+  width: 50%;
+  text-align: center;
+  font-weight: 300;
+}
+
+.main-section figure {
+  padding-top: 64px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.main-section {
+  background-image: url("../../public/img/rickandmortywallpaper.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduccion {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 12px;
+}
+
+.introduccion figure {
+  height: fit-content;
+  background-color: #f0e14a;
+  border-radius: 4px;
+  padding: 18px;
+  padding-bottom: 38px;
+  margin: 0;
+}
+
+.introduccion figure p {
+  margin-bottom: 28px;
+}
+
+.introduccion figure a {
+  list-style: none;
+  background-color: #97ce4c;
+  transition: background-color 0.2s ease-out;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.introduccion figure a:hover {
+  background-color: #e89ac7;
+}
+
+.info-section {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+.info-section section {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.info-section section p {
+  margin: 0;
+  text-align: left;
+}
+
+.info-section section img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.infoCard {
+  text-align: left;
+  background-color: #02afc5;
+  color: #ecf0f1;
+  padding: 48px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  width: 80%;
+  cursor: auto;
+}
+
+.infoCard p {
+  width: 100%;
+}
+
+.infoCard img {
+  margin-top: 32px;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 48px;
+  border-radius: 5px;
+  background-color: #e89ac7;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0e14a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #97ce4c;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+}
+
+.redes img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 769px) {
+  nav {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .info-section section img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  form {
+    width: 70%;
+  }
+}
